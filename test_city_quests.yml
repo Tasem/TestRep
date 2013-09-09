@@ -1,0 +1,82 @@
+# Модное жилье
+
+quest20104:
+  <<: *quest
+  id: 20104
+  swf_name: "quest20022.swf"
+  accessible_room:
+  - 0
+  require:
+  - {type: parent, klass: id, count: 20103}
+  goal:
+  - {type: user, klass: population, count: 1200, icon_path: quest_pick_population.png}
+  - {type: field, klass: bungalow_siena, action: create, count: 1, icon_path: bungalow_siena.png}
+  reward:
+    complete:
+    - roll: 0
+      items:
+      - exp: {min_quantity: 65}
+      - coins: {min_quantity: 8000}
+
+# Производственный сектор
+
+quest20105:
+  <<: *quest
+  id: 20105
+  swf_name: "quest12009.swf"
+  person: 'factory'
+  accessible_room:
+  - 0
+  require:
+  - {type: parent, klass: id, count: 20106}
+  goal:
+  - {type: field, klass: conveyor_city_factory_base, count: 1, icon_path: conveyor_new_goal.png, min_stage: 2, max_stage: 6}
+  reward:
+    complete:
+    - roll: 0
+      items:
+      - exp: {min_quantity: 100}
+      - coins: {min_quantity: 10000}
+
+# Новые фабрики
+
+quest20106:
+  <<: *quest
+  id: 20106
+  swf_name: "quest14.swf"
+  person: 'factory'
+  accessible_room:
+  - 0
+  require:
+  - {type: parent, klass: id, count: 20104}
+  goal:
+  - {type: field, klass: city_factory, count: 3, icon_path: quest_factories.png, min_stage: 2, max_stage: 6}
+  - {type: event, klass: contract_base, action: pick, count: 3, icon_path: quest_contracts.png, unlock_cost: 1}
+  reward:
+    complete:
+    - roll: 0
+      items:
+      - exp: {min_quantity: 130}
+      - coins: {min_quantity: 5000}
+      - parasol: {min_quantity: 3}
+
+# Альтернативная энергия
+
+quest20107:
+  <<: *quest
+  id: 20107
+  swf_name: 'quest9.swf'
+  person: 'power'
+  accessible_room:
+  - 0
+  require:
+  - {type: parent, klass: id, count: 20105}
+  goal:
+  - {type: field, action: create, klass: solar_power_power_base, count: 1, icon_path: solar_power_new_goal.png}
+  - {type: event, klass: solar_cells, action: put, count: 1, icon_path: sunbattery.png, unlock_cost: 1}
+  reward:
+    complete:
+    - roll: 0
+      items:
+      - exp: {min_quantity: 100}
+      - coins: {min_quantity: 5000}

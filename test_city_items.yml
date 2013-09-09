@@ -1,0 +1,510 @@
+# Жалюзи
+
+jalousie:
+  <<: *contract
+  id: 13422
+  description.ru: "Жалюзи"
+  description.ko: ""
+  description.en: "Jalousie"
+  cost_buy_game: 15
+  cost_sell_game: 300
+  exp: 2
+  stage_length: 180s
+  swf_name: "jalousie.swf"
+
+# Деловые костюмы
+
+business_suits:
+  <<: *contract
+  id: 10503
+  description.ru: "Деловые костюмы"
+  description.ko: "신사복"
+  description.en: "Business suits"
+  cost_buy_game: 450
+  cost_sell_game: 1230
+  exp: 6
+  stage_length: 1200s
+  swf_name: "suit.swf"
+
+# Видео игры на DVD
+
+dvd_video_games:
+  <<: *contract
+  id: 10504
+  description.ru: "Видео игры на DVD"
+  description.ko: "비디오게임"
+  description.en: "DVD video games"
+  cost_buy_game: 1200
+  cost_sell_game: 9900
+  exp: 65
+  stage_length: 24
+  swf_name: "games.swf"
+
+# Электрические чайники
+
+kettles:
+  <<: *contract
+  id: 10505
+  description.ru: "Электрические чайники"
+  description.ko: "전기 포트"
+  description.en: "Electric teakettle"
+  cost_buy_game: 900
+  cost_sell_game: 3500
+  exp: 21
+  stage_length: 2.5
+  level: 2
+  swf_name: "teapot.swf"
+
+# Кондитерские изделия
+
+confectionery:
+  <<: *contract
+  id: 10506
+  description.ru: "Кондитерские изделия"
+  description.ko: "수제 파이"
+  description.en: "Confectionery"
+  cost_buy_game: 1000
+  cost_sell_game: 6600
+  exp: 45
+  stage_length: 10
+  level: 2
+  swf_name: "cake.swf"
+
+# Попкорн
+
+popcorn:
+  <<: *contract
+  id: 10507
+  description.ru: "Попкорн"
+  description.ko: "팝콘"
+  description.en: "Pop-corn"
+  cost_buy_game: 300
+  cost_sell_game: 1250
+  exp: 14
+  stage_length: 1
+  level: 3
+  swf_name: "popcorn.swf"
+
+# Спорттовары
+
+sport_shoes:
+  <<: *contract
+  id: 10508
+  description.ru: "Спорттовары"
+  description.ko: "스포츠용품"
+  description.en: "Sporting goods"
+  cost_buy_game: 500
+  cost_sell_game: 5800
+  exp: 43
+  stage_length: 8
+  level: 3
+  swf_name: "sport-goods.swf"
+
+# Медикаменты
+
+medicines:
+  <<: *contract
+  id: 10509
+  description.ru: "Медикаменты"
+  description.ko: "약품"
+  description.en: "Medicines"
+  cost_buy_game: 2500
+  cost_sell_game: 9200
+  exp: 56
+  stage_length: 12
+  level: 1
+  swf_name: "tablet.swf"
+
+# Автопокрышки
+
+tires:
+  <<: *contract
+  id: 10510
+  description.ru: "Автопокрышки"
+  description.ko: "타이어"
+  description.en: "Tires"
+  cost_buy_game: 3200
+  cost_sell_game: 17000
+  exp: 116
+  stage_length: 48
+  level: 4
+  swf_name: "well.swf"
+
+
+# Мебель для спальни
+
+bedroom_furniture:
+  <<: *contract
+  id: 10512
+  description.ru: "Мебель для спальни"
+  description.ko: "고급침대"
+  description.en: "Bedroom furniture"
+  cost_buy_game: 1600
+  cost_sell_game: 6700
+  exp: 49
+  stage_length: 7
+  level: 5
+  swf_name: "bed.swf"
+
+
+# Мотоциклы
+
+bikes:
+  <<: *contract
+  id: 10516
+  description.ru: "Мотоциклы"
+  description.ko: "오토바이"
+  description.en: "Motorcycles"
+  cost_buy_game: 8750
+  cost_sell_game: 22500
+  exp: 120
+  stage_length: 36
+  level: 9
+  swf_name: "moto.swf"
+
+
+# Посуда
+
+dishes:
+  <<: *contract
+  id: 10511
+  description.ru: "Посуда"
+  description.ko: "가정용 접시"
+  description.en: "Crockery"
+  cost_buy_game: 425
+  cost_sell_game: 4300
+  exp: 33
+  stage_length: 4
+  level: 5
+  swf_name: "ware.swf"
+
+
+# Большой пруд
+
+fish_pond: &fish_pond
+  <<: *terrain
+  id: 10221
+  description.ru: "Большой пруд"
+  description.ko: "호수 공원"
+  description.en: "Large pond"
+  cost_buy_game: 12000
+  cost_sell_game: 2400
+  max_population_increase: 1000
+  exp: 48
+  level: 11
+  sort_order: 11
+  width: 2
+  height: 2
+  swf_name: "fish_pond.swf"
+  delayed_animations: false
+  walk_road_end_x: 9
+  walk_road_end_y: 4
+  group_key_id: 10221
+  quest_tag:
+  - "fish_pond"
+
+# Большой пруд
+
+fish_pond_real:
+  <<: *fish_pond
+  id: 10222
+  cost_buy_game: 0
+  cost_sell_game: 300
+  cost_buy_real: 3
+  buy_as_gift: true
+  level: 1
+  sort_order: 1
+  shoppable: false
+
+# Большой пруд
+
+fish_pond_new_real:
+  <<: *fish_pond
+  id: 12371
+  cost_buy_game: 0
+  cost_sell_game: 300
+  cost_buy_real: 3
+  buy_as_gift: true
+  level: 4
+  sort_order: 4
+  shoppable: true
+  
+# Дом с бассейном на крыше
+
+small_apartment_real: &small_apartment_real
+  <<: *house
+  id: 10113
+  quest_tag:
+  - "small_apartment"
+  - "small_apartment_new_art"
+  description.ru: "Дом с бассейном на крыше"
+  description.ko: "고급 오피스텔"
+  description.en: "Block of flats with penthouse"
+  cost_buy_game: 0
+  cost_sell_game: 300
+  cost_buy_real: 3
+  buy_as_gift: true
+  population_increase: 175
+  stage_length: 4
+  build_length: 60s
+  exp: 80
+  extra_exp: 7
+  level: 1
+  sort_order: 1
+  power_consume: 9
+  water_consume: 7
+  swf_name: "small_apartment.swf"
+  delayed_animations: true
+  x_correction: 50
+  y_correction: -32
+  walk_road_end_x: 2
+  walk_road_end_y: 4
+  group_key_id: 10113
+  shoppable: false
+  feature:
+  - "city_release_01"
+
+# Дом с бассейном на крыше
+
+small_apartment_new_real: &small_apartment_new_real
+  <<: *small_apartment_real
+  id: 12350
+  cost_buy_game: 0
+  cost_sell_game: 300
+  cost_buy_real: 3
+  buy_as_gift: true
+  level: 2
+  sort_order: 2
+
+# Дом с бассейном
+
+small_apartment_new_art_real:
+  <<: *small_apartment_new_real
+  id: 40055
+  shoppable: true
+  x_correction: 0
+  y_correction: 0
+  swf_name: "small_apartment_new_art.swf"
+  quest_tag:
+  - "small_apartment"
+  - "small_apartment_new_art"
+
+# Вольер для птиц
+
+bird_cages_place:
+  <<: *zoo_cages_place
+  id: 16070
+  object_id: -16070
+  position_x: 32
+  position_y: 53
+  width: 4
+  height: 5
+  building_place: true
+  description.ru: "Птичьи клетки"
+  description.ko: "Птичьи клетки"
+  description.en: "Птичьи клетки"
+  require_option: "or"
+  require:
+  - "administration_zoo_final"
+  - "administration_zoo_up1"
+  - "administration_zoo_up2"
+  - "administration_zoo_up3"
+  build:
+  - "bird_cages_buildsite"
+  - "bird_cages_buildsite_real"
+  quest_tag:
+  - "cage_places"
+  swf_name: "bird_cages_0.swf"
+  feature:
+  - "city_release_2012_04_27"
+
+# Вольер для птиц
+
+bird_cages_buildsite: &bird_cages_buildsite
+  <<: *zoo_cages_stage
+  id: 16071
+  accessible_room:
+  - 0
+  position_x: 32
+  position_y: 53
+  cost_buy_game: 200000
+  cost_sell_game: 0
+  swf_name: "bird_cages_1.swf"
+  description.ru: "Птичьи клетки"
+  description.ko: ""
+  description.en: ""
+  description_acc.ru: "Птичьи клетки"
+  description_acc.ko: ""
+  description_acc.en: ""
+  max_population_increase: 7500
+  width: 4
+  height: 5
+  exp: 750
+  level: 21
+  sort_order: 2
+  power_consume: 15
+  water_consume: 10
+  progress: "stage0"
+  delayed_animations: true
+  shop_department: "zoo"
+  consumes:
+  - "sand"
+  - "waterproofing"
+  - "fixture"
+  - "flexible_pipes"
+  materials_quantity:
+    sand: 10
+    waterproofing: 10
+    fixture: 10
+    flexible_pipes: 10
+  produce: "bird_cages_stage2"
+  child_places:
+  - "cage_places"
+  child_objects:
+  - "administration_zoo_buildsite"
+  - "pavilion_of_the_primates_buildsite"
+  - "cages_of_the_predators_buildsite"
+  - "bear_enclosure_buildsite"
+  parent_object: "administration_zoo_final"
+  require:
+  - - "administration_zoo_final"
+    - "administration_zoo_up1"
+    - "administration_zoo_up2"
+    - "administration_zoo_up3"
+  quest_tag:
+  - "bird_cages_buildsite"
+  - "cages"
+  description_text.ru: "Строительство птичьих клеток увеличит максимальную численность населения вашего города на 8&nbsp;500 человек. Для завершения строительства необходимо создать каркас, а затем закупить строительные материалы или получить их от друзей в качестве подарков."
+  description_text.en: ""
+  description_text.ko: ""
+  feature:
+  - "city_release_2012_04_27"
+
+# Вольер для птиц
+
+bird_cages_buildsite_real:
+  <<: *bird_cages_buildsite
+  id: 16072
+  cost_buy_game: 0
+  cost_sell_game: 0
+  cost_buy_real: 3
+  level: 11
+  sort_order: 1
+
+# Вольер для птиц
+
+bird_cages_stage2:
+  <<: *bird_cages_buildsite
+  id: 16073
+  max_population_increase: 30000
+  exp: 1000
+  power_consume: 22
+  water_consume: 14
+  swf_name: "bird_cages_2.swf"
+  progress: "stage1"
+  shoppable: false
+  can_not_buy: true
+  consumes:
+  - "roll_lawn"
+  - "drainage_device"
+  - "steel_reinforcing"
+  - "runway_equipment"
+  - "tickets"
+  materials_quantity:
+    roll_lawn: 10
+    drainage_device: 10
+    steel_reinforcing: 10
+    runway_equipment: 10
+    tickets: 10
+  produce: "bird_cages_stage3"
+  quest_tag:
+  - "bird_cages_buildsite"
+  - "bird_cages_stage2"
+  - "cages"
+
+
+# Хозтовары
+
+blamco_inc: &blamco_inc
+  <<: *city_factory
+  id: 10402
+  accessible_room:
+  - 0
+  quest_tag:
+  - "city_factory"
+  description.ru: "Хозтовары"
+  description.ko: "중형 생산공장"
+  description.en: "Housewares"
+  swf_name: "factory_2.swf"
+  level: 2
+  cost_buy_game: 15000
+  cost_sell_game: 3000
+  power_consume: 10
+  water_consume: 2
+  exp: 45
+  build_length: 1.5
+  shoppable: false
+  population_requirement: "factory"
+  delayed_animations: true
+  contracts:
+  - "jalousie"
+  - "business_suits"
+  - "dvd_video_games"
+  - "kettles"
+  - "sport_shoes"
+  - "tires"
+  - "bedroom_furniture"
+  - "bikes"
+  walk_road_end_x: 4
+  walk_road_end_y: 9
+
+# Хозтовары
+
+blamco_inc_new:
+  <<: *blamco_inc
+  id: 15239
+  swf_name: "blamco_inc_new.swf"
+  delayed_animations: true
+  walk_road_end_x: 7
+  walk_road_end_y: 9
+  x_correction: 1
+  y_correction: 0
+
+# Хозтовары
+
+blamco_inc_new_art:
+  <<: *blamco_inc
+  id: 15572
+  swf_name: "blamco_inc_new_2_art.swf"
+  shoppable: true
+  delayed_animations: true
+  walk_road_end_x: 7
+  walk_road_end_y: 9
+  x_correction: -3
+  y_correction: -1
+
+# Дом с бассейном на крыше
+
+small_apartment: &small_apartment
+  <<: *small_apartment_real
+  id: 10117
+  cost_buy_game: 20000
+  cost_sell_game: 4000
+  cost_buy_real: 0
+  build_length: 900s
+  level: 7
+  sort_order: 7
+  buy_as_gift: false
+
+# Дом с бассейном
+
+small_apartment_new_art:
+  <<: *small_apartment
+  id: 40054
+  shoppable: true
+  x_correction: 0
+  y_correction: 0
+  swf_name: "small_apartment_new_art.swf"
+  quest_tag:
+  - "small_apartment"
+  - "small_apartment_new_art"
