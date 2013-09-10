@@ -28,7 +28,7 @@ quest20105:
   accessible_room:
   - 0
   require:
-  - {type: parent, klass: id, count: 20106}
+  - {type: parent, klass: id, count: 20104}
   goal:
   - {type: field, klass: conveyor_city_factory_base, count: 1, icon_path: conveyor_new_goal.png, min_stage: 2, max_stage: 6}
   reward:
@@ -48,7 +48,7 @@ quest20106:
   accessible_room:
   - 0
   require:
-  - {type: parent, klass: id, count: 20104}
+  - {type: parent, klass: id, count: 20105}
   goal:
   - {type: field, klass: city_factory, count: 3, icon_path: quest_factories.png, min_stage: 2, max_stage: 6}
   - {type: event, klass: contract_base, action: pick, count: 3, icon_path: quest_contracts.png, unlock_cost: 1}
@@ -70,7 +70,7 @@ quest20107:
   accessible_room:
   - 0
   require:
-  - {type: parent, klass: id, count: 20105}
+  - {type: parent, klass: id, count: 20106}
   goal:
   - {type: field, action: create, klass: solar_power_power_base, count: 1, icon_path: solar_power_new_goal.png}
   - {type: event, klass: solar_cells, action: put, count: 1, icon_path: sunbattery.png, unlock_cost: 1}
