@@ -6,10 +6,10 @@ jalousie:
   description.ru: "Жалюзи"
   description.ko: ""
   description.en: "Jalousie"
-  cost_buy_game: 15
-  cost_sell_game: 300
-  exp: 2
-  stage_length: 180s
+  cost_buy_game: 50
+  cost_sell_game: 1000
+  exp: 8
+  stage_length: 300s
   swf_name: "jalousie.swf"
 
 # Деловые костюмы
@@ -187,7 +187,7 @@ fish_pond: &fish_pond
   description.ru: "Большой пруд"
   description.ko: "호수 공원"
   description.en: "Large pond"
-  cost_buy_game: 12000
+  cost_buy_game: 5000
   cost_sell_game: 2400
   max_population_increase: 1000
   exp: 48
@@ -223,7 +223,7 @@ fish_pond_new_real:
   id: 12371
   cost_buy_game: 0
   cost_sell_game: 300
-  cost_buy_real: 3
+  cost_buy_real: 1
   buy_as_gift: true
   level: 4
   sort_order: 4
@@ -492,7 +492,7 @@ small_apartment: &small_apartment
   cost_sell_game: 4000
   cost_buy_real: 0
   build_length: 900s
-  level: 7
+  level: 15
   sort_order: 7
   buy_as_gift: false
 
